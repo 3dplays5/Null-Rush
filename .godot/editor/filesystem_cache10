@@ -1,0 +1,11 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1795462740
+bullet.gd::GDScript::8985070702047100310::1795462686::0::1::::<>Area2D<><>0<>0<><>::
+bullet.tscn::PackedScene::4604577593449974586::1795462686::0::1::::<><><>0<>0<><>::uid://d1ao2i2di7pby::::res://bullet.gd<>uid://bjrerfpwcvxa5::::res://icon.svg
+gun.gd::GDScript::8346601927363408854::1795462686::0::1::::<>Area2D<><>0<>0<><>::
+gun.tscn::PackedScene::8608239058149952533::1795462686::0::1::::<><><>0<>0<><>::uid://dq6fkxk34uu2a::::res://gun.gd<>uid://bjrerfpwcvxa5::::res://icon.svg
+icon.svg::CompressedTexture2D::3053488211513778754::1795462686::1795462743::1::::<><><>0<>0<>138b82971589f4d5adccb93ad02d0ce9<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+level1(1).png::CompressedTexture2D::8734173238884862040::1795462686::1795462743::1::::<><><>0<>0<>02812839bb121a27e0649a7339d72bfe<>res://.godot/imported/level1(1).png-d0273023b27888a4f5adde229b1badeb.ctex::
+player.gd::GDScript::5366928507025132424::1795462686::0::1::::<>CharacterBody2D<><>0<>0<><>::
+player.tscn::PackedScene::5668552918864496062::1795462686::0::1::::<><><>0<>0<><>::uid://bjrerfpwcvxa5::::res://icon.svg<>uid://cip1r727dpgls::::res://player.gd<>uid://duv5o7gml3x2t::::res://gun.tscn<>uid://dq6fkxk34uu2a::::res://gun.gd
+testlevel.tscn::PackedScene::6055876293533683905::1795462686::0::1::::<><><>0<>0<><>::uid://dwo5s7c3wihim::::res://level1(1).png<>uid://cm05idtueudek::::res://player.tscn
