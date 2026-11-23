@@ -4,3 +4,7 @@ res://gun.gd
 res://player.gd
 res://testlevel.tscn
 res://player.tscn
+res://enemy_spawner.tscn
+res://enemy.tscn
+res://enemy.gd
+res://bullet.tscn

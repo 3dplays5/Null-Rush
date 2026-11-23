@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://by1ik032ikga1" path="res://ammo_crate.tscn" id="1_74kyy"]
 [ext_resource type="Texture2D" uid="uid://dwo5s7c3wihim" path="res://level1(1).png" id="1_pi5jr"]
 [ext_resource type="PackedScene" uid="uid://cm05idtueudek" path="res://player.tscn" id="1_w3snd"]
+[ext_resource type="PackedScene" uid="uid://bpbmba5opnoyg" path="res://enemy.tscn" id="4_kx2s4"]
 
 [node name="testlevel" type="Node2D" unique_id=2146338062]
 
@@ -22,3 +23,6 @@ limit_top = -850
 limit_right = 2543
 limit_bottom = 1310
 position_smoothing_enabled = true
+
+[node name="Enemy" parent="." unique_id=1322628270 instance=ExtResource("4_kx2s4")]
+position = Vector2(322, -125)
