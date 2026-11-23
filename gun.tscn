@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://duv5o7gml3x2t"]
+
+[ext_resource type="Script" uid="uid://dq6fkxk34uu2a" path="res://gun.gd" id="1_dk5gl"]
+[ext_resource type="Texture2D" uid="uid://bjrerfpwcvxa5" path="res://icon.svg" id="1_vk1bi"]
+
+[node name="gun" type="Area2D" unique_id=1129929867]
+script = ExtResource("1_dk5gl")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1431551747]
+position = Vector2(134, -1.1368684e-13)
+scale = Vector2(0.8515625, 0.21874999)
+texture = ExtResource("1_vk1bi")
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=954400193]
+position = Vector2(196, 0)
+scale = Vector2(0.2, 0.2)
