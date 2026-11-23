@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+@onready var gun = $gun
 @onready var ammo = $CanvasLayer/Control/ammo
 const SPEED = 500.0
 const JUMP_VELOCITY = -400.0

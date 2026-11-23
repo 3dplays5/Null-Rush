@@ -1,5 +1,6 @@
-res://bullet.tscn
+res://ammo_crate.gd
+res://ammo_crate.tscn
 res://gun.gd
-res://player.tscn
-res://ui.tscn
 res://player.gd
+res://testlevel.tscn
+res://player.tscn
