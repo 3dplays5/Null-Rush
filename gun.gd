@@ -1,4 +1,8 @@
 extends Area2D
+var bullets = 12
+var maxbullets = 12
+var reserve = 120
+
 
 var bullet = preload("res://bullet.tscn")
 @onready var sprite = $Sprite2D
@@ -16,8 +20,14 @@ func _process(delta: float) -> void:
 	else:
 		sprite.flip_v = true
 	
-	if Input.is_action_pressed("fire"):
+	if Input.is_action_just_pressed("fire") && bullets > 0:
 		fire()
+		bullets -= 1
+	if Input.is_action_just_pressed("reload"):
+		await get_tree().create_timer(0.6).timeout
+		while bullets != maxbullets:
+			bullets += 1
+			reserve -= 1
 		
 func fire():
 	var b = bullet.instantiate()

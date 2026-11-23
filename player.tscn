@@ -3,12 +3,11 @@
 [ext_resource type="Texture2D" uid="uid://bjrerfpwcvxa5" path="res://icon.svg" id="1_4flbx"]
 [ext_resource type="Script" uid="uid://cip1r727dpgls" path="res://player.gd" id="1_i3pqv"]
 [ext_resource type="PackedScene" uid="uid://duv5o7gml3x2t" path="res://gun.tscn" id="2_onrkg"]
-[ext_resource type="Script" uid="uid://dq6fkxk34uu2a" path="res://gun.gd" id="4_hqtel"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dkoqu"]
 size = Vector2(128, 128)
 
-[node name="player" type="CharacterBody2D" unique_id=1448665637]
+[node name="player" type="CharacterBody2D" unique_id=1448665637 groups=["player"]]
 script = ExtResource("1_i3pqv")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1424461315]
@@ -18,4 +17,24 @@ texture = ExtResource("1_4flbx")
 shape = SubResource("RectangleShape2D_dkoqu")
 
 [node name="gun" parent="." unique_id=1129929867 instance=ExtResource("2_onrkg")]
-script = ExtResource("4_hqtel")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1610061861]
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=617432796]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1155.0
+offset_bottom = 649.0
+
+[node name="ammo" type="Label" parent="CanvasLayer/Control" unique_id=268781963]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 13.0
+offset_top = -49.0
+offset_right = 180.0
+offset_bottom = 19.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 26
+text = "AMMO"

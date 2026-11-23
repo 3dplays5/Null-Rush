@@ -1,9 +1,8 @@
 extends CharacterBody2D
 
-
+@onready var ammo = $CanvasLayer/Control/ammo
 const SPEED = 500.0
 const JUMP_VELOCITY = -400.0
-
 
 func _physics_process(delta: float) -> void:
 	if Input.is_action_pressed("W"):
@@ -20,3 +19,5 @@ func _physics_process(delta: float) -> void:
 		velocity.x = 0
 	
 	move_and_slide()
+	
+	ammo.text = "AMMO: " + str($gun.bullets) + "/" + str($gun.reserve)
