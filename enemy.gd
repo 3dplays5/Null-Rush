@@ -8,17 +8,18 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 
-
 func _on_area_2d_area_entered(area: Area2D) -> void:
-		print("HIT")
 		if area.is_in_group("bullet"):
-			print("HIT")
 			queue_free()
 
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
-		print("HIT")
-		if body.is_in_group("bullet"):
-			print("HIT")
-			body.queue_free()
-			queue_free()
+	if body.is_in_group("bullet"):
+		body.queue_free()
+		queue_free()
+	if body.is_in_group("player"):
+		body.health -= 25
+		print(body.health)
+		if body.health <= 0:
+			get_tree().reload_current_scene() 
+		

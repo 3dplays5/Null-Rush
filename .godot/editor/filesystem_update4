@@ -1,7 +1,5 @@
-res://bullet.tscn
 res://bullet.gd
+res://bullet.tscn
 res://enemy.gd
-res://enemy.tscn
 res://testlevel.tscn
-res://enemyspawn.gd
-res://enemyspawn.tscn
+res://player.gd
