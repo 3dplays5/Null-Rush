@@ -1,10 +1,7 @@
-res://ammo_crate.gd
-res://ammo_crate.tscn
-res://gun.gd
-res://player.gd
-res://testlevel.tscn
-res://player.tscn
-res://enemy_spawner.tscn
-res://enemy.tscn
-res://enemy.gd
 res://bullet.tscn
+res://bullet.gd
+res://enemy.gd
+res://enemy.tscn
+res://testlevel.tscn
+res://enemyspawn.gd
+res://enemyspawn.tscn

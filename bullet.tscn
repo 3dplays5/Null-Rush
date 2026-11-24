@@ -3,7 +3,10 @@
 [ext_resource type="Script" uid="uid://d1ao2i2di7pby" path="res://bullet.gd" id="1_v7oki"]
 [ext_resource type="Texture2D" uid="uid://bjrerfpwcvxa5" path="res://icon.svg" id="2_v8qja"]
 
-[node name="bullet" type="Area2D" unique_id=1915583212 groups=["bullet"]]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dkoqu"]
+size = Vector2(130.51611, 129.99998)
+
+[node name="bullet" type="CharacterBody2D" unique_id=1515671691 groups=["bullet"]]
 scale = Vector2(0.26050422, 0.2)
 script = ExtResource("1_v7oki")
 
@@ -14,5 +17,9 @@ texture = ExtResource("2_v8qja")
 wait_time = 10.0
 autostart = true
 
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=660943345]
+position = Vector2(-3.6608785e-06, -4.7683707e-06)
+scale = Vector2(1, 0.9999998)
+shape = SubResource("RectangleShape2D_dkoqu")
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
