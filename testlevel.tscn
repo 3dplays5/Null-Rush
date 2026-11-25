@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dwo5s7c3wihim" path="res://level1(1).png" id="1_pi5jr"]
 [ext_resource type="PackedScene" uid="uid://cm05idtueudek" path="res://player.tscn" id="1_w3snd"]
 [ext_resource type="PackedScene" uid="uid://c0s1fjy3hc7be" path="res://enemyspawn.tscn" id="4_kx2s4"]
+[ext_resource type="PackedScene" uid="uid://k12f88k3sjov" path="res://shop.tscn" id="5_b5yu0"]
 
 [node name="testlevel" type="Node2D" unique_id=2146338062]
 
@@ -29,3 +30,6 @@ position_smoothing_enabled = true
 
 [node name="Marker2D" parent="Node" unique_id=944858342 instance=ExtResource("4_kx2s4")]
 position = Vector2(1057, -196)
+
+[node name="shopnpc" parent="." unique_id=1637975018 instance=ExtResource("5_b5yu0")]
+position = Vector2(-232, -220)

@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://k12f88k3sjov"]
+
+[ext_resource type="Script" uid="uid://crlvy6g2qa0to" path="res://shopnpc.gd" id="1_e7rdd"]
+[ext_resource type="Texture2D" uid="uid://bjrerfpwcvxa5" path="res://icon.svg" id="1_viryw"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ueold"]
+radius = 335.48325
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dkoqu"]
+radius = 56.718605
+
+[node name="shopnpc" type="CharacterBody2D" unique_id=1637975018]
+script = ExtResource("1_e7rdd")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1495911392]
+texture = ExtResource("1_viryw")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=277689853]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1786688849]
+shape = SubResource("CircleShape2D_ueold")
+debug_color = Color(0.7135798, 3.85046e-07, 0.37583685, 0.41960785)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1220956713]
+shape = SubResource("CircleShape2D_dkoqu")
+
+[node name="Label" type="Label" parent="." unique_id=850771811]
+offset_left = -41.0
+offset_top = -121.0
+offset_right = 37.0
+offset_bottom = -81.0
+theme_override_font_sizes/font_size = 29
+text = "SHOP"
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

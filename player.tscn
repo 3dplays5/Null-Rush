@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://bjrerfpwcvxa5" path="res://icon.svg" id="1_4flbx"]
 [ext_resource type="Script" uid="uid://cip1r727dpgls" path="res://player.gd" id="1_i3pqv"]
 [ext_resource type="PackedScene" uid="uid://duv5o7gml3x2t" path="res://gun.tscn" id="2_onrkg"]
+[ext_resource type="PackedScene" uid="uid://dhxgv2q8gphrv" path="res://shop_ui.tscn" id="4_hqtel"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dkoqu"]
 size = Vector2(128, 128)
@@ -38,3 +39,8 @@ offset_bottom = 19.0
 grow_vertical = 0
 theme_override_font_sizes/font_size = 26
 text = "AMMO"
+
+[node name="shop UI" parent="CanvasLayer" unique_id=396503215 instance=ExtResource("4_hqtel")]
+
+[connection signal="ammoup" from="CanvasLayer/shop UI" to="." method="_on_shop_ui_ammoup"]
+[connection signal="healthup" from="CanvasLayer/shop UI" to="." method="_on_shop_ui_healthup"]

@@ -7,10 +7,10 @@
 script = ExtResource("1_dk5gl")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1431551747]
-position = Vector2(134, -1.1368684e-13)
-scale = Vector2(0.8515625, 0.21874999)
+position = Vector2(112.75, -1.1368684e-13)
+scale = Vector2(0.5195313, 0.21874999)
 texture = ExtResource("1_vk1bi")
 
 [node name="Marker2D" type="Marker2D" parent="." unique_id=954400193]
-position = Vector2(196, 0)
+position = Vector2(146, -1.9999999)
 scale = Vector2(0.2, 0.2)

@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://dhxgv2q8gphrv"]
+
+[ext_resource type="Script" uid="uid://cmi806ne6580n" path="res://shop_ui.gd" id="1_fscwk"]
+
+[node name="shop UI" type="Control" unique_id=396503215]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fscwk")
+
+[node name="AMMO" type="Label" parent="." unique_id=1176142382]
+layout_mode = 0
+offset_left = 54.0
+offset_top = 249.0
+offset_right = 373.0
+offset_bottom = 345.0
+theme_override_font_sizes/font_size = 40
+text = "MAX AMMO + 24"
+
+[node name="Button" type="Button" parent="AMMO" unique_id=969037000]
+layout_mode = 0
+offset_left = 77.0
+offset_top = 148.0
+offset_right = 239.0
+offset_bottom = 204.0
+theme_override_font_sizes/font_size = 35
+text = "BUY"
+
+[node name="HEALTH" type="Label" parent="." unique_id=1812620805]
+layout_mode = 0
+offset_left = 399.0
+offset_top = 249.0
+offset_right = 718.0
+offset_bottom = 345.0
+theme_override_font_sizes/font_size = 40
+text = "MAX HEALTH + 25"
+
+[node name="Button2" type="Button" parent="HEALTH" unique_id=1763864233]
+layout_mode = 0
+offset_left = 77.0
+offset_top = 148.0
+offset_right = 239.0
+offset_bottom = 204.0
+theme_override_font_sizes/font_size = 35
+text = "BUY"
+
+[connection signal="button_down" from="AMMO/Button" to="." method="_on_button_button_down"]
+[connection signal="button_down" from="HEALTH/Button2" to="." method="_on_button_2_button_down"]
