@@ -1,3 +1,6 @@
+Button
+Label
+ColorRect
 CollisionShape2D
 Timer
 Node
@@ -5,6 +8,5 @@ Marker2D
 CharacterBody2D
 Area2D
 Sprite2D
-Label
 Control
 CanvasLayer
