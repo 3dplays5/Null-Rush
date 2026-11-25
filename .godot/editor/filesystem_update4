@@ -1,9 +1,7 @@
-res://gun.tscn
-res://shop.tscn
-res://shopnpc.gd
 res://player.tscn
+res://shopnpc.gd
 res://player.gd
-res://shop_ui.tscn
-res://shop_ui.gd
-res://gun.gd
-res://testlevel.tscn
+res://scenes/death.tscn
+res://scenes/start.tscn
+res://enemy.gd
+res://death.gd

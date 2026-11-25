@@ -14,9 +14,7 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
 		text.text = "PRESS E TO OPEN SHOP"
 		entered = true
-		while entered:
-			if Input.is_action_just_pressed("interact"):
-				body.shop()
+		body.shop()
 
 
 func _on_area_2d_body_exited(body: ) -> void:

@@ -20,6 +20,5 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
 		body.health -= 25
 		print(body.health)
-		if body.health <= 0:
-			get_tree().reload_current_scene() 
+
 		

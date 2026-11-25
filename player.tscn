@@ -40,6 +40,15 @@ grow_vertical = 0
 theme_override_font_sizes/font_size = 26
 text = "AMMO"
 
+[node name="healthLabel" type="Label" parent="CanvasLayer/Control" unique_id=1563033403]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 563.0
+offset_right = 225.0
+offset_bottom = 603.0
+theme_override_font_sizes/font_size = 26
+text = "HEALTH"
+
 [node name="shop UI" parent="CanvasLayer" unique_id=396503215 instance=ExtResource("4_hqtel")]
 
 [connection signal="ammoup" from="CanvasLayer/shop UI" to="." method="_on_shop_ui_ammoup"]

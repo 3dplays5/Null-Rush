@@ -2,6 +2,7 @@ extends CharacterBody2D
 var dmg = 1
 @onready var gun = $gun
 @onready var ammo = $CanvasLayer/Control/ammo
+@onready var healthLabel = $CanvasLayer/Control/healthLabel
 var health: int = 100
 const SPEED = 500.0
 const JUMP_VELOCITY = -400.0
@@ -23,10 +24,13 @@ func _physics_process(delta: float) -> void:
 		velocity.x = SPEED
 	else:
 		velocity.x = 0
+	if health <= 0:
+		death()
 	
 	move_and_slide()
 	
 	ammo.text = "AMMO: " + str($gun.bullets) + "/" + str($gun.reserve)
+	healthLabel.text = "HEALTH: " + str(health)
 
 func shop():
 	shopui.show()
@@ -39,3 +43,6 @@ func _on_shop_ui_ammoup() -> void:
 
 func _on_shop_ui_healthup() -> void:
 	health += 25
+
+func death() -> void:
+	get_tree().change_scene_to_file("res://scenes/death.tscn")
