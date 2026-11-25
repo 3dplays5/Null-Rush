@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://bst4oxmhag8cp"]
+
+[ext_resource type="Script" uid="uid://bp5btrjwil7vd" path="res://start.gd" id="1_jaeev"]
+
+[node name="Start" type="Control" unique_id=1077879637]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jaeev")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=287065263]
+layout_mode = 0
+offset_left = -14.0
+offset_top = -28.0
+offset_right = 1167.0
+offset_bottom = 709.0
+color = Color(0.57893145, 0.36193156, 3.85046e-07, 1)
+
+[node name="Label" type="Label" parent="." unique_id=402915914]
+layout_mode = 0
+offset_left = 198.0
+offset_top = 90.0
+offset_right = 995.0
+offset_bottom = 238.0
+theme_override_font_sizes/font_size = 48
+text = "NULL RUSH
+"
+horizontal_alignment = 1
+
+[node name="Start button" type="Button" parent="." unique_id=1659928138]
+layout_mode = 0
+offset_left = 98.0
+offset_top = 471.0
+offset_right = 482.0
+offset_bottom = 603.0
+theme_override_colors/font_color = Color(0.99999994, 0.87210286, 0.26667395, 1)
+theme_override_font_sizes/font_size = 32
+text = "Start"
+
+[node name="Quit Button" type="Button" parent="." unique_id=1399676482]
+layout_mode = 0
+offset_left = 595.0
+offset_top = 473.0
+offset_right = 1041.0
+offset_bottom = 609.0
+theme_override_font_sizes/font_size = 32
+text = "Quit"
+
+[connection signal="pressed" from="Start button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Quit Button" to="." method="_on_quit_button_pressed"]
