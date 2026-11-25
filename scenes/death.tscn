@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://yvanw7or36u4"]
+
+[ext_resource type="Script" uid="uid://uylimkdid62f" path="res://death.gd" id="1_0hhgj"]
+
+[node name="Death" type="Control" unique_id=647039146]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0hhgj")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=327234906]
+layout_mode = 0
+offset_right = 1196.0
+offset_bottom = 656.0
+color = Color(0.5340293, 0.20609936, 0, 1)
+
+[node name="Label" type="Label" parent="." unique_id=1332198092]
+layout_mode = 0
+offset_left = 169.0
+offset_top = 44.0
+offset_right = 928.0
+offset_bottom = 212.0
+theme_override_font_sizes/font_size = 48
+text = "YOU LOSE!"
+horizontal_alignment = 1
+
+[node name="Play Again" type="Button" parent="." unique_id=262013392]
+layout_mode = 0
+offset_left = 336.0
+offset_top = 571.0
+offset_right = 561.0
+offset_bottom = 618.0
+theme_override_font_sizes/font_size = 32
+text = "Play Again
+"
+
+[node name="Quit" type="Button" parent="." unique_id=1908252749]
+layout_mode = 0
+offset_left = 580.0
+offset_top = 572.0
+offset_right = 810.0
+offset_bottom = 625.0
+theme_override_font_sizes/font_size = 32
+text = "Quit
+"
+
+[connection signal="pressed" from="Play Again" to="." method="_on_play_again_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
