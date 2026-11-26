@@ -1,17 +1,17 @@
 [gd_scene format=3 uid="uid://b6uqyqt2fjnck"]
 
-[ext_resource type="Script" uid="uid://d1ao2i2di7pby" path="res://bullet.gd" id="1_v7oki"]
-[ext_resource type="Texture2D" uid="uid://bjrerfpwcvxa5" path="res://icon.svg" id="2_v8qja"]
+[ext_resource type="Script" uid="uid://d1ao2i2di7pby" path="res://scripts/bullet.gd" id="1_y25gk"]
+[ext_resource type="Texture2D" uid="uid://bjrerfpwcvxa5" path="res://assets/icon.svg" id="2_l5glv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dkoqu"]
 size = Vector2(130.51611, 129.99998)
 
 [node name="bullet" type="CharacterBody2D" unique_id=1515671691 groups=["bullet"]]
 scale = Vector2(0.26050422, 0.2)
-script = ExtResource("1_v7oki")
+script = ExtResource("1_y25gk")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1884509204]
-texture = ExtResource("2_v8qja")
+texture = ExtResource("2_l5glv")
 
 [node name="Timer" type="Timer" parent="." unique_id=1344659033]
 wait_time = 10.0

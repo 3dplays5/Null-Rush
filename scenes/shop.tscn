@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://k12f88k3sjov"]
 
-[ext_resource type="Script" uid="uid://crlvy6g2qa0to" path="res://shopnpc.gd" id="1_e7rdd"]
-[ext_resource type="Texture2D" uid="uid://bjrerfpwcvxa5" path="res://icon.svg" id="1_viryw"]
+[ext_resource type="Script" uid="uid://crlvy6g2qa0to" path="res://scripts/shopnpc.gd" id="1_e7rdd"]
+[ext_resource type="Texture2D" uid="uid://bjrerfpwcvxa5" path="res://assets/icon.svg" id="1_viryw"]
+
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ueold"]
 radius = 335.48325

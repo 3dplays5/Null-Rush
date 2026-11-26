@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://yvanw7or36u4"]
 
-[ext_resource type="Script" uid="uid://uylimkdid62f" path="res://death.gd" id="1_0hhgj"]
+[ext_resource type="Script" uid="uid://uylimkdid62f" path="res://scripts/death.gd" id="1_0hhgj"]
 
 [node name="Death" type="Control" unique_id=647039146]
 layout_mode = 3

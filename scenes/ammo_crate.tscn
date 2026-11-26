@@ -1,16 +1,16 @@
 [gd_scene format=3 uid="uid://by1ik032ikga1"]
 
-[ext_resource type="Texture2D" uid="uid://bjrerfpwcvxa5" path="res://icon.svg" id="1_s7mof"]
-[ext_resource type="Script" path="res://ammo_crate.gd" id="1_s8h70"]
+[ext_resource type="Script" uid="uid://r1uh2dcgbuht" path="res://scripts/ammo_crate.gd" id="1_qq18h"]
+[ext_resource type="Texture2D" uid="uid://bjrerfpwcvxa5" path="res://assets/icon.svg" id="2_i20cx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7xlk3"]
 size = Vector2(128, 128)
 
 [node name="AmmoCrate" type="Area2D" unique_id=567279028]
-script = ExtResource("1_s8h70")
+script = ExtResource("1_qq18h")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1245585424]
-texture = ExtResource("1_s7mof")
+texture = ExtResource("2_i20cx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1373988604]
 position = Vector2(0, 1)

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c2j74gybbwi76"]
 
-[ext_resource type="PackedScene" uid="uid://bpbmba5opnoyg" path="res://enemy.tscn" id="1_ewhtn"]
+[ext_resource type="PackedScene" uid="uid://bpbmba5opnoyg" path="res://scenes/enemy.tscn" id="1_ewhtn"]
 
 [node name="Enemy Spawner" type="Marker2D" unique_id=1046956312]
 

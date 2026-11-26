@@ -4,7 +4,7 @@ var maxbullets = 12
 var reserve = 120
 
 
-var bullet = preload("res://bullet.tscn")
+var bullet = preload("res://scenes/bullet.tscn")
 @onready var sprite = $Sprite2D
 
 # Called when the node enters the scene tree for the first time.
