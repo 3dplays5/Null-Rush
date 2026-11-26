@@ -11,3 +11,4 @@ res://scenes/shop_ui.tscn
 res://scripts/start.gd
 res://scripts/gun.gd
 res://scripts/enemyspawn.gd
+res://scenes/testlevel.tscn

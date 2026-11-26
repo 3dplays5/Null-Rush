@@ -25,11 +25,14 @@ limit_bottom = 1310
 position_smoothing_enabled = true
 
 [node name="AmmoCrate" parent="." unique_id=567279028 instance=ExtResource("1_74kyy")]
+modulate = Color(0, 1, 1, 1)
 
 [node name="Node" type="Node" parent="." unique_id=1921815945]
 
 [node name="Marker2D" parent="Node" unique_id=944858342 instance=ExtResource("4_kx2s4")]
+modulate = Color(0.7891773, 0.45156753, 1.347661e-06, 1)
 position = Vector2(1057, -196)
 
 [node name="shopnpc" parent="." unique_id=1637975018 instance=ExtResource("5_b5yu0")]
+modulate = Color(0, 0.735149, 0.51053154, 1)
 position = Vector2(-232, -220)
