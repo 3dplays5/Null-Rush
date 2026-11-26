@@ -1,7 +1,2 @@
-res://player.tscn
-res://shopnpc.gd
-res://player.gd
-res://scenes/death.tscn
 res://scenes/start.tscn
-res://enemy.gd
-res://death.gd
+res://player.gd

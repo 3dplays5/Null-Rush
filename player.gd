@@ -39,7 +39,7 @@ func shopexit():
 
 func _on_shop_ui_ammoup() -> void:
 	$gun.reserve += 24
-
+	$gun.maxbullets += 2
 
 func _on_shop_ui_healthup() -> void:
 	health += 25
